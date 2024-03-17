@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ele1" style="width: 200px; height: 200px; background-color: darkblue;"></div>
+    <div id="ele2" style="width: 200px; height: 200px; background-color: darkred;"></div>
+    <div id="ele3" style="width: 200px; height: 200px; background-color: darkgreen;"></div>
+    <div id="ele4" style="width: 200px; height: 200px; background-color: yellow;"></div>
+
+    <script>
+        function cambiarColor(ele){
+            ele.style.backgroundColor = 'black'
+        }
+
+        document.getElementById('ele1').addEventListener('click', function(event){
+            cambiarColor(event.target)
+        })
+
+        document.getElementById('ele2').addEventListener('click', function(event){
+            cambiarColor(event.target)
+        })
+
+        document.getElementById('ele3').addEventListener('click', function(event){
+            cambiarColor(event.target)
+        })
+
+        document.getElementById('ele4').addEventListener('click', function(event){
+            cambiarColor(event.target)
+        })
+    </script>
+</body>
+</html>

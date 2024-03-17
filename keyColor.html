@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="key" style="width: 200px; height: 200px; background-color: white; border-color: black; border: solid;"></div>
+    <div id="key2"></div>
+
+    <script>
+        function cambiarColor(color){
+            document.getElementById('key').style.backgroundColor = color
+        }
+
+        function nuevoDiv(color){
+            document.getElementById('key2').style.width = '200px'
+            document.getElementById('key2').style.height = '200px'
+            document.getElementById('key2').style.backgroundColor = color
+            document.getElementById('key2').style.border = 'solid'
+        }
+        document.addEventListener('keydown', function(event){
+            if(event.key === 'a'){
+                cambiarColor('pink')
+            }else if(event.key === 's'){
+                cambiarColor('orange')
+            }else if(event.key === 'd'){
+                cambiarColor('lightblue')
+            }else if(event.key === 'q'){
+                nuevoDiv('purple')
+            }else if(event.key === 'w'){
+                nuevoDiv ('grey')
+            }else if(event.key === 'e'){
+                nuevoDiv('brown')
+            }
+        })
+    </script>
+</body>
+</html>
